@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <!-- <link rel="stylesheet" type="text/css" href="login.css"> -->
+</head>
+<style>
+    .container{
+        background:url(./wooden-shelves-digital-art-hd-wallpaper-1920x1080-7977.jpg)no-repeat center/cover;
+        width: 100%;
+        height: 300%;
+    }
+        
+    
+
+        
+    
+     
+    #navbar{
+        background-color: rgb(255, 205, 236);
+        display: flex;
+
+    }
+    ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        
+    }
+    ul li a{
+        text-decoration: none;
+    }
+    form {
+	width: 300px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+input[type="text"],input[type="email"]{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	
+	border-radius: 5px;
+}
+
+input[type="button"] {
+	background-color: #a50f69;
+	color: white;
+	padding: 10px 20px;
+	margin-top: 10px;
+	
+	border-radius: 5px;
+	cursor: pointer;
+} 
+    
+    
+
+</style>
+<body>
+   
+   
+    <div class="container">
+        
+        <div id="navbar">
+            <ul>
+                <li style="margin-center: 60px;"><a href="Home.html">Home</a></li>
+                <li><a href="personeldetails.html">personeldetails</a></li>
+                <li><a href="Contact Us.html">Contact Us</a></li>
+            </ul> 
+               
+        </div>
+        <h1 style="text-align: center;">Contact Us</h1>
+        <div id="m"></div>
+        <form id="contact">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31733.44966335165!2d39.22086822430269!3d-6.173418886855565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185cd0baff4bbbe1%3A0x9b1b27e467a0f579!2sMwanakwerekwe%2C%20Zanzibar!5e0!3m2!1sen!2stz!4v1682961476687!5m2!1sen!2stz" width="200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="khairiya" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" value="mambosasa" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" value="kombokhairiya@gmail.com" name="email" required>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" value="verygood" cols="30" rows="10" required></textarea>
+            <button onclick="khai()">Submit</button>
+
+            <h4 id="myname"></h4>
+            <h4 id="myadd"></h4>
+            <h4 id="myemail"></h4>
+            <h4 id="mycomments"></h4>
+        </form>
+       
+
+
+    </div>
+</body>
+<script src="javascript.js"></script>
+</html>
